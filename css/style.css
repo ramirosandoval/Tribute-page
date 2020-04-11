@@ -25,14 +25,14 @@ body{
     grid-area: title-paragraph;
 }
 
-#main .img-div{
+#main #img-div{
     grid-area: img;
     padding: 0 10%;
     justify-items: center;
     background-color: white;
 }
 
-#main .img-div img{
+#main #img-div img{
     max-width: 100%;
 }
 
@@ -54,4 +54,16 @@ body{
     margin: 2% 26%;
     grid-area: phrase;
     text-align: justify;
+}
+
+@media all and (max-width: 500px){
+
+    #main ul{
+        margin: 2% 5%;
+    }
+
+    #phrase{
+        margin: 2% 5%;
+    }
+
 }
