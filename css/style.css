@@ -1,50 +1,57 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
-main{
+#main{
     display: grid;
     grid-template-areas: "main-title"
     "title-paragraph"
     "img"
     "timeline-title"
-    "life-timeline";
+    "life-timeline"
+    "phrase";
+
     justify-items: center;
     align-items: center;
     text-align: center;
-
+    max-width: 100%;
     background-color: rgba(207, 200, 200, 0.452);
 }
 
-main h1{
+#main #title{
     grid-area: main-title;
 }
 
-main .subtitle{
+#main .subtitle{
     grid-area: title-paragraph;
 }
 
-main .img{
+#main .img-div{
     grid-area: img;
     padding: 0 10%;
     justify-items: center;
     background-color: white;
 }
 
-main h2{
+#main .img-div img{
+    max-width: 100%;
+}
+
+#main h2{
     grid-area: timeline-title;
 }
 
-main ul{
+#main ul{
     margin: 2% 25%;
     text-align: justify;
     grid-area: life-timeline;
 }
 
-main ul li{
+#main ul li{
     margin-bottom: 2%;
 }
 
-.phrase{
+#phrase{
     margin: 2% 26%;
+    grid-area: phrase;
     text-align: justify;
 }
